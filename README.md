@@ -16,15 +16,18 @@
 
 <h2>Project Screenshots:</h2>
 
- ![screenshot of API window](https://raw.githubusercontent.com/Mangaleshwaran2002/GlimmerCart/master/ScreenShots/Screenshot-5.png)
+ ![screenshot of home page](https://raw.githubusercontent.com/Mangaleshwaran2002/Journal_IRJH/master/Screenshots/Screenshot-1.png)
 
-![screenshot of products window](https://raw.githubusercontent.com/Mangaleshwaran2002/GlimmerCart/master/ScreenShots/Screenshot-1.png)
+![screenshot of manuscript upload page](https://raw.githubusercontent.com/Mangaleshwaran2002/Journal_IRJH/master/Screenshots/Screenshot-2.png)
 
-![screenshot of product window](https://raw.githubusercontent.com/Mangaleshwaran2002/GlimmerCart/master/ScreenShots/Screenshot-3.png) 
+![screenshot of login page](https://raw.githubusercontent.com/Mangaleshwaran2002/Journal_IRJH/master/Screenshots/Screenshot-3.png)
 
-![screenshot of cart window](https://raw.githubusercontent.com/Mangaleshwaran2002/GlimmerCart/master/ScreenShots/Screenshot-4.png)
+![screenshot of PGAmin login page](https://raw.githubusercontent.com/Mangaleshwaran2002/Journal_IRJH/master/Screenshots/Screenshot-4.png)
 
-![screenshot of login window](https://raw.githubusercontent.com/Mangaleshwaran2002/GlimmerCart/master/ScreenShots/Screenshot-2.png) 
+![screenshot of status page](https://raw.githubusercontent.com/Mangaleshwaran2002/Journal_IRJH/master/Screenshots/Screenshot-5.png)
+
+![screenshot of acceptance page](https://raw.githubusercontent.com/Mangaleshwaran2002/Journal_IRJH/master/Screenshots/Screenshot-6.png)
+
 
 ## 🧐 Features
 
