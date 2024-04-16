@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}
+Issues page
+{% endblock %}
+{% block body %}
+<section>
+    <div class="container">
+        <div class="head_part">
+            <h1 class="heading heading_main text_bigger center">Sciencia Acta Xaveriana</h1>
+            
+            <h1 class="heading text_medium center">ALL ISSUES</h1>
+        </div>
+        <div class="body_part">
+            {% if manuscript %}
+                {% for journal in manuscript %}
+            <div class="list_column">
+                <h1 class="heading text_medium"><span>{{ journal.id }}.</span>  {{ journal.Title }}</h1>
+                <h3 class="paragraph text_medium">Authors :  {{journal.author}}
+                    {% if journal.co_authors  %}
+                    {{ journal.co_authors }}
+                    {% endif %}
+                </h3>
+                <h2 class="paragraph text_medium">{{ journal.volume }}</h2>
+                <a href="{{journal.pdf_file.url}}"><button class="button_view">view</button></a>
+
+                
+            </div>
+            {% endfor %}
+                {% else %}
+                <h3 class="heading">
+                    No results found
+                </h3>
+            {% endif %}
+            
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .table{
+    width: 80%;
+    border: 1px solid black;
+}
+.container .table thead{
+    background-color: cornflowerblue;
+    border: 1px solid black;
+}
+.container .table thead td{
+    padding: 2rem 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.container .table tbody td{
+    padding: 2rem 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+.container .table .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container .table .buttons button{
+    padding: .5rem .9rem;
+    font-weight: 600;
+    box-shadow: 2px 4px black;
+}
+.container .table .buttons button:hover{
+    padding: .5rem .9rem;
+    font-weight: 600;
+    box-shadow: 1px 1px black;
+}
+.container .buttons .accept{
+    background-color: yellowgreen;
+    border: 2px solid black;
+    border-radius: 16px;
+    color: black;
+}
+.container .buttons .reject{
+    background-color: crimson;
+    border: 2px solid black;
+    border-radius: 16px;
+    color: azure;
+}

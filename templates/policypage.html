@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}
+policies page
+{% endblock %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/policypage_style.css' %}">
+{% endblock %}
+{% block body %}
+<section>
+    <div class="container">
+        <h1 class="heading heading_main text_big center">Interdisciplinary Research Journal for Humanities (IRJH)</h1>
+        <h1 class="heading heading_sub text_medium center">policies</h1>
+        <ul class="list_column list_style_none gap_big">
+            <a href="{% url 'Publication_Policy' %}" class="list_tems list_item_1">
+                <li>Publication Policy</li>
+            </a>
+            <a href="{% url 'Plagiarism_Policy' %}" class="list_tems list_item_2">
+                <li>Plagiarism Policy</li>
+            </a>
+            <a href="{% url 'Peer_Review_Policy' %}" class="list_tems list_item_3">
+                <li>Peer Review Policy</li>
+            </a>
+            <a href="{% url 'Open_Access_Policy' %}" class="list_tems list_item_4">
+                <li>Open Access Policy</li>
+            </a>
+            <a href="{% url 'indexing' %}" class="list_tems list_item_5">
+                <li>Indexing</li>
+            </a>
+            <a href="{% url 'Multiple_Publications' %}" class="list_tems list_item_6">
+                <li>Multiple and Concurrent Publications</li>
+            </a>
+            <a href="{% url 'Correction_and_Retraction' %}" class="list_tems list_item_7">
+                <li>Correction and Retraction</li>
+            </a>
+            <a href="{% url 'COPE_Guidelines' %}" class="list_tems list_item_8">
+                <li>COPE Guidelines</li>
+            </a>
+            <a href="{% url 'Guidelines_for_Editors' %}" class="list_tems list_item_9">
+                <li>Guidelines for Editors</li>
+            </a>
+            <a href="{% url 'Guidelines_for_Reviewers' %}" class="list_tems list_item_10">
+                <li>Guidelines for Reviewers</li>
+            </a>
+            <a href="{% url 'Privacy_Statement' %}" class="list_tems list_item_11">
+                <li>Privacy Statement</li>
+            </a>
+            </ul>
+        </div>
+    </section>    
+    {% endblock %}

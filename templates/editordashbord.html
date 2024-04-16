@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+manuscript status page
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/statuspagestyle.css' %}">
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Sno</td>
+                    <td>Title</td>
+                    <td>Date</td>
+                    <td>view manuscript</td>
+                    <td>Status</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% if manuscript %}
+                {% for journal in manuscript %}
+                <tr>
+                    <td>{{ journal.id }}</td>
+                    <td>{{ journal.Title }}</td>
+                    <td>{{ journal.pub_date }}</td>
+                    <td><a href="{{ journal.pdf_file.url }}" target="_blank" rel="noopener noreferrer">view</a></td>
+                    <td class="buttons">
+                        <a href="{% url 'accept_Manuscript' id=journal.id %}"><button class="accept">accept</button></a>
+                        <a href="{% url 'reject_Manuscript' id=journal.id %}"><button class="reject">reject</button></a>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                no journal available
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}

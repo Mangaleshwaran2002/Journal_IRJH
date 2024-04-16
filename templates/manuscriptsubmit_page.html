@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Signup page
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/signupstyle.css' %}">
+{% endblock %}
+{% block body %}
+<section>
+    <div class="container">
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <!-- firstname and lastname -->
+            <h1>Manuscript submit</h1>
+            <select name="articletype" id="">
+                <option value="">Article Type</option>
+                <option value="Research Article">Research Article</option>
+                <option value="Review Article">Review Article</option>
+            </select>
+            <!-- firstname and lastname -->
+            <div class="singup_details">
+            
+            <!-- Manuscript Title -->
+            <input type="text" name="Manuscript_Title" id="" placeholder="Manuscript Title*" required>
+            <!-- Manuscript Title -->
+            
+            <!-- Abstract field -->
+            <textarea name="Abstract" id="" cols="30" rows="10" placeholder="Abstract*"></textarea>
+            <!-- Abstract field -->
+            
+            <div class="file_upload">
+                <input type="file" name="file_field" required="required" aria-required="true">
+            </div>
+            <!-- Manuscript Title -->
+            <input type="text" name="Manuscript_co_authors" id="" placeholder="Manuscript co_authors" >
+            <!-- Manuscript Title -->
+            
+            </div>
+            <!-- submit button  -->
+            <button type="submit">Submit Manuscript</button>
+            <!-- submit button  -->
+        </form>
+    </div>
+</section>
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}

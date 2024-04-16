@@ -1,0 +1,37 @@
+# Ignore the local static directory
+# /static
+
+# Ignore media files
+/media
+
+# Ignore Python bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+
+# Ignore the database file if it's SQLite
+*.sqlite3
+*.db
+
+# Ignore all log files
+*.log
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore git files and directories
+.git
+.gitignore
+
+# Ignore other unnecessary files
+*.swp
+*~
+
+
+
+docker-compose.yml

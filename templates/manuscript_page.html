@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+       home page
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/indexingstyle.css' %}">
+{% endblock %}
+{% block body %}
+    <section>
+        <div class="container">
+            <div class="page_heading">
+                <h1 class="heading">Sciencia Acta Xaveriana</h1>
+                <h4 class="heading">Manuscript</h4>
+            </div>
+            <div class="page_body">
+                <ul>
+                    <li><a href="{% url 'Manuscript_submit' %}">Submit new Manuscript</a></li>
+                    <li><a href="{% url 'Manuscript_status' %}">Manuscript Status</a></li>
+                
+                </ul>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}

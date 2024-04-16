@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}
+    home page
+{% endblock %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/homepage_style.css' %}">
+{% endblock %}
+{% block body %}
+    <section>
+        <div class="container">
+            <div class="head_part">
+                <h1 class="heading heading_main text_big center">Interdisciplinary Research Journal for Humanities (IRJH)</h1>
+                <h4 class="heading heading_sub center">An International Research Journal</h4>
+            </div>
+            <div class="body_part paragraph">
+                <p>Our journal, Interdisciplinary Research Journal for Humanities (IRJH) (ISSN: 2249-250X), a Peer Reviewed Journal was started in 2012. It is a biannual journal. We publish authentic and unpublished articles under the branch of humanities for the last ten years. This includes subjects like Tamil, English, Folklore, Social Work and Social Science.
+                </p>
+                <h2 class="heading heading_main text_medium">Journal Details</h2>
+                <p class="details">
+                    <span class="paragraph text_medium">Publisher: St. Xavier's College(Autonomous), Palayamkottai, India.</span>
+                    <span class="paragraph text_medium">
+                    ISSN: 0976-1152 
+                    </span>
+                    <span class="paragraph text_medium">
+                        Email: saxeditor2009@gmail.com
+                    </span >
+                    <span class="paragraph text_medium">Web: www.tnsxcjournal.in</span>
+                </p>
+                <h2 class="heading heading_main text_medium">Patrons</h2>
+                <p class="details">
+                    <span>Rev. Dr. V. Henry Jerome, S.J., Rector</span>
+                    <span>
+                        Rev. Dr. G.Pushparaj, S.J., Secretary
+                    </span>
+                    <span>
+                        Rev. Dr. S.Mariadoss, S.J., Principal           
+                    </span>                    
+                </p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

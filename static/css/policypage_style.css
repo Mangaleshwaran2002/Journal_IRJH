@@ -1,0 +1,13 @@
+.list_tems{
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all .2s ease;
+    padding: .5rem .5rem;
+    scale: .9;
+}
+.list_tems:hover{
+    color:#ffffff;
+    background-color: var(--heading-color);
+    cursor: pointer;
+    scale: 1;
+}

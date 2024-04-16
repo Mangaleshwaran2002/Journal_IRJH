@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    
+}
+
+
+.container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem .5rem;
+}
+.container form{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+    /* width: 30%; */
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 4px 6px black;
+    /* background-color: cornflowerblue; */
+}
+
+.container form input{
+    font-size: large;
+}
+.container form .name_details{
+    gap: .5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container form .singup_details{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1rem .5rem;
+}
+/* top right bottom left  */
+.container form .name_details input{
+    padding: .5rem 0 .5rem 2rem; 
+    border:1px solid black;
+    width: 90%;
+    border-radius: 12px;
+}
+.container form .name_details input::placeholder{
+    font-size: large;
+}
+.container form .singup_details input{
+    padding: .5rem 0 .5rem 2rem;
+    border:1px solid black;
+    border-radius: 12px;
+}
+.container form .singup_details input::placeholder{
+    font-size: large;
+}
+.container form .singup_details select{
+    padding: .5rem 0 .5rem 2rem;
+    border:1px solid black;
+    border-radius: 12px;
+}
+.container form button{
+    padding: .7rem .9rem;
+    background-color: #0086b2;
+    border: 2px solid black;
+    border-radius: 16px;
+    color: azure;
+    font-weight: 500;
+    box-shadow: 2px 2px black;
+}
+.container form button:hover{
+    box-shadow: 1px 1px black;
+}
+.container form select{
+    padding: .5rem .6rem;
+}
+.container form input[type='file']{
+    border: none;
+}
+
+@media (max-width: 800px) {
+    .container{
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+    .container form{
+        overflow: hidden;
+        width: 80%;
+        margin: 0;
+        /* padding: 0; */
+    }
+}

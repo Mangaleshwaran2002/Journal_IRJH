@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}
+Editorial Board
+{% endblock %}
+
+{% block body %}
+<section>
+    <div class="container">
+        <div class="head_part">
+            <h1 class="heading heading_main text_big center">Interdisciplinary Research Journal for Humanities (IRJH)</h1>
+            
+            <h1 class="heading text_medium center">EDITORIAL BOARD</h1>
+        </div>
+        <div class="body_part">
+            <ul class="list_column list_style_none">
+                {% if editors %}
+                {% for editor in editors %}
+                    <li>
+                        
+                        {% if editor.title  %}
+                        <h1 class="heading text_medium">
+                            {{ editor.title }}
+                        </h1>
+                        {% endif %}
+                        <h2 class="title text_medium">
+                            {{ editor.name }}
+                        </h2>
+                        <p class="editor_desc">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </p>
+                        <p class="paragraph list_column">
+                            <span >{{ editor.bio }}</span>
+                            <span>{{ editor.location }}</span>
+                            <span>{{ editor.email }}</span>
+                        </p>
+                    </li>
+                    {% endfor%}
+                {% else %}
+                no editor details available
+                {% endif %}
+            </ul>
+            <!-- <h1 class="heading text_medium">
+                Founding Editor
+            </h1>
+            <h2 class="title text_medium">
+                Dr. A. Lourdusamy (Rtd.,)
+            </h2>
+            <p class="paragraph list_column">
+                <span >Department of Mathematics, St. Xavier's College,</span>
+                <span>Palayamkottai, India.627002</span>
+                <span>saxeditor2009@gmail.com</span>
+            </p> -->
+        </div>
+    </div>
+</section>
+{% endblock %}

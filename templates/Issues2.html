@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+Issues page
+{% endblock %}
+{% block body %}
+<section>
+    <div class="container">
+        <div class="head_part">
+            <h1 class="heading heading_main text_bigger center">Sciencia Acta Xaveriana</h1>
+            
+            <h1 class="heading text_medium center">ALL ISSUES</h1>
+        </div>
+        <div class="body_part">
+            {% if volumes %}
+                {% for volume in volumes %}
+                
+                <h1 class="heading list_column gap_big"><a href="{% url 'issuespage' id=volume.id %}">{{ volume.name }}</a></h1>
+                
+                {% endfor %}
+                {% else %}
+                <h3 class="heading">
+                    No results found
+                </h3>
+            {% endif %}
+            
+        </div>
+    </div>
+</section>
+{% endblock %}

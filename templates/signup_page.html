@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Signup page
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/signupstyle.css' %}">
+{% endblock %}
+{% block body %}
+<section>
+    <div class="container">
+        <form action="" method="post">
+            {% csrf_token %}
+            <!-- firstname and lastname -->
+            <h1>Signup</h1>
+            <div class="name_details">
+                <input type="text" name="firstname" id="" placeholder="Firstname*" required>
+                <input type="text" name="lastname" id="" placeholder="Lastname">
+            </div>
+            <!-- firstname and lastname -->
+            <div class="singup_details">
+            <!-- orcid -->
+            <input type="text" name="orcid" id="" placeholder="orcid">
+            <!-- orcid -->
+
+            <!-- email field -->
+            <input type="email" name="email" id="" placeholder="Email*" required>
+            <!-- email field -->
+
+            <!-- username field -->
+            <input type="text" name="username" id="" placeholder="Username*" required>
+            <!-- username field -->
+
+            <!-- password field  -->
+            <input type="password" name="password" id="" placeholder="Password*" required>
+            <!-- password field  -->
+            </div>
+            <!-- submit button  -->
+            <button type="submit">Signup</button>
+            <!-- submit button  -->
+            <h4>Already have an account <a href="{% url 'login page'%}">click here</a></h4>
+        </form>
+    </div>
+</section>
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
